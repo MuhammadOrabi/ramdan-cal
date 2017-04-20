@@ -9,10 +9,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/city', function(req, res, next) {
-	City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
-	  	if (err) return res.status(500).json({ err: err });
-		res.json(city);
-	});
+	res.json(req.body);
+	// City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
+	//   	if (err) return res.status(500).json({ err: err });
+	// 	res.json(city);
+	// });
 });
 
 router.get('/city/:name', function(req, res, next) {
