@@ -10,7 +10,9 @@ router.get('/', function(req, res, next) {
 
 router.post('/city', function(req, res, next) {
 	var city = new City({ name: req.body.name, cal: req.body.cal });
-	city.save();
+	city.save(function(err) {
+		res.json(err);
+	});
 	res.json(city);
 });
 
