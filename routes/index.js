@@ -9,16 +9,15 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/city', function(req, res, next) {
-	var city = new City({ name: req.body.name, cal: req.body.cal });
-	city.save(function(err) {
-		res.json(err);
+	City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
+	  	if (err) return res.status(500).json({ err: err });
+		res.json(city);
 	});
-	res.json(city);
 });
 
 router.get('/city/:name', function(req, res, next) {
 	City.findOne({'name': req.params.name}, function(err, city) {
-		if (err) { return new Error(); }
+		if (err) { return res.status(500).json({ err: err }); }
 		res.json(city);
 	});
 });
