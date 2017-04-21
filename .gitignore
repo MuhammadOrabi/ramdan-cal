@@ -1,1 +1,36 @@
 node_modules
+
+# {
+# 	"name": "jaddah",
+# 	"cal": {
+# 		"1": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"2": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"3": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"4": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"5": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"6": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"7": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"8": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"9": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"10": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"11": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"12": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"13": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"14": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"15": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"16": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"17": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"18": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"19": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"20": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"21": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"23": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"24": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"25": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"26": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"27": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"28": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"29": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"30": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" }
+# 	}
+# }
