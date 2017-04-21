@@ -1,7 +1,7 @@
 node_modules
 npm-debug.log
 # {
-# 	"name": "jaddah",
+# 	"name": "الطائف",
 # 	"cal": {
 # 		"1": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"2": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
@@ -24,6 +24,7 @@ npm-debug.log
 # 		"19": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"20": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"21": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
+# 		"22": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"23": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"24": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
 # 		"25": { "Fajr": "05:23", "Sunrise": "06:26", "Dhuhr": "12:27", "Asr": "15:53", "Sunset": "18:29", "Maghrib": "18:29", "Isha": "19:32", "Imsak": "05:13", "Midnight": "10:59" },
