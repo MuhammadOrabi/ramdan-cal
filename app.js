@@ -10,7 +10,8 @@ var env = process.env.NODE_ENV || 'development';
 if (env === 'development') {
 	url = 'mongodb://localhost:27017/Cal';
 } else {
-	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
+	// url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
+	url = 'mongodb://cal_admin:cal_admin@ds151018.mlab.com:51018/cal'
 }
 
 var mongoose = require('mongoose');
