@@ -19,6 +19,8 @@ router.get('/city/:name', function(req, res, next) {
 	// res.json(req.params.name);
 	City.findOne({'name': req.params.name}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
+		if (!city) { return res.status(404).json('Not Found'); }
+
 		var d = new Date();
 		var n = d.getDate();
 		var tod_data = _.pluck(city.cal, n.toString());
