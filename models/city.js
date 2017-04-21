@@ -7,3 +7,4 @@ var city = new Schema({
 });
 
 module.exports = mongoose.model('City', city);
+
