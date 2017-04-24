@@ -61,6 +61,7 @@ router.get('/city/:name', function(req, res, next) {
 			      	"Isha": tod_data[0].Isha,
 			      	"Imsak": tom_data[0].Imsak,
 			      	"Midnight": tom_data[0].Midnight,
+			      	"date-tomorrow": ' رمضان ' + tom,
 			      	"Fajr-tomorrow": tom_data[0].Fajr,
 			      	"Sunrise-tomorrow": tom_data[0].Sunrise,
 			      	"Dhuhr-tomorrow": tom_data[0].Dhuhr,
