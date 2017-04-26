@@ -16,7 +16,6 @@ router.post('/city', function(req, res, next) {
 });
 
 router.post('/city/data', function(req, res, next) {
-	console.log(req.body.mention.hashtags);
 	if (!req.body.mention.hashtags[0].hashtag) { return res.status(500).json(); }
 	City.findOne({'name': req.body.mention.hashtags[0].hashtag}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
