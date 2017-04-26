@@ -17,6 +17,12 @@ router.post('/city', function(req, res, next) {
 
 router.post('/city/data', function(req, res, next) {
 	if (!req.body.mention.hashtags[0].hashtag) { return res.status(500).json(); }
+	var name = req.body.mention.hashtags[0].hashtag;
+	// if (name === 'مكة' || name === 'مكه' || name === 'مكة_المكرمة' || name === 'مكه_المكرمه') {
+	// 	name = 'مكة المكرمة';
+	// } else if (name === 'جده') {
+	// 	name = 'جدة';
+	// } else if (name === 'جيزان') {} else {}
 	City.findOne({'name': req.body.mention.hashtags[0].hashtag}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!city) { return res.status(404).json('Not Found'); }
@@ -27,7 +33,7 @@ router.post('/city/data', function(req, res, next) {
 		var tom = n === 30 ? 1 : n + 1;
 		var tom_data = _.pluck(city.cal, tom.toString());
 		var data = {
-			      	"city": req.params.name,
+			      	"city": name,
 			      	"date": '' + n,
 			      	"Fajr": tod_data[0].Fajr,
 			      	"Sunrise": tod_data[0].Sunrise,
