@@ -16,14 +16,29 @@ router.post('/city', function(req, res, next) {
 });
 
 router.post('/city/data', function(req, res, next) {
-	if (!req.body.mention.hashtags[0].hashtag) { return res.status(500).json(); }
-	var name = req.body.mention.hashtags[0].hashtag;
+	var hash = req.body.mention.hashtags;
+	var name;
+	for (var i = 0; i < hash.length; i++) {
+		if (hash[i].hashtag) {
+			name = hash[i].hashtag;
+		}
+	}
+	if (!name) { return res.status(422).json(); }
 	// if (name === 'مكة' || name === 'مكه' || name === 'مكة_المكرمة' || name === 'مكه_المكرمه') {
 	// 	name = 'مكة المكرمة';
 	// } else if (name === 'جده') {
 	// 	name = 'جدة';
-	// } else if (name === 'جيزان') {} else {}
-	City.findOne({'name': req.body.mention.hashtags[0].hashtag}, function(err, city) {
+	// } else if (name === 'جيزان') {
+	// 	name = 'جازان';
+	// } else if (name === 'ابها') {
+	// 	name = 'أبها';
+	// } else if (name === 'الباحه') {
+	// 	name = 'الباحة';
+	// } else if (name === 'المدينة' || name === 'المدينه' || name === 'المدينة_المنورة' || name === 'المدينه_المنوره') {
+	// 	name = 'المدينة المنورة';
+	// }
+
+	City.findOne({'name': name}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!city) { return res.status(404).json('Not Found'); }
 
@@ -33,7 +48,7 @@ router.post('/city/data', function(req, res, next) {
 		var tom = n === 30 ? 1 : n + 1;
 		var tom_data = _.pluck(city.cal, tom.toString());
 		var data = {
-			      	"city": name,
+			      	"city": city.name,
 			      	"date": '' + n,
 			      	"Fajr": tod_data[0].Fajr,
 			      	"Sunrise": tod_data[0].Sunrise,
