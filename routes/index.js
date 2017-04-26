@@ -24,6 +24,7 @@ router.post('/city/data', function(req, res, next) {
 		for (var i = 0; i < hash.length; i++) {
 			if (hash[i].hashtag && _.contains(names, hash[i].hashtag)) {
 				name = hash[i].hashtag;
+				break;
 			}
 		}
 		City.findOne({'name': name}, function(err, city) {
