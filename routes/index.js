@@ -16,8 +16,8 @@ router.post('/city', function(req, res, next) {
 });
 
 router.post('/city/data', function(req, res, next) {
-	if (!req.body.name) { return res.status(500).json(); }
-	City.findOne({'name': req.body.name}, function(err, city) {
+	if (!req.body.mention.hashtags[0].hashtag) { return res.status(500).json(); }
+	City.findOne({'name': req.body.mention.hashtags[0].hashtag}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!city) { return res.status(404).json('Not Found'); }
 
