@@ -15,9 +15,9 @@ router.post('/city', function(req, res, next) {
 	});
 });
 
-router.get('/city/:name', function(req, res, next) {
-	// res.json(req.params.name);
-	City.findOne({'name': req.params.name}, function(err, city) {
+router.post('/city/data', function(req, res, next) {
+	if (!req.body.name) { return res.status(500).json(); }
+	City.findOne({'name': req.body.name}, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!city) { return res.status(404).json('Not Found'); }
 
@@ -28,7 +28,7 @@ router.get('/city/:name', function(req, res, next) {
 		var tom_data = _.pluck(city.cal, tom.toString());
 		var data = {
 			      	"city": req.params.name,
-			      	"date": ' رمضان ' + n,
+			      	"date": '' + n,
 			      	"Fajr": tod_data[0].Fajr,
 			      	"Sunrise": tod_data[0].Sunrise,
 			      	"Dhuhr": tod_data[0].Dhuhr,
@@ -38,7 +38,7 @@ router.get('/city/:name', function(req, res, next) {
 			      	"Isha": tod_data[0].Isha,
 			      	"Imsak": tom_data[0].Imsak,
 			      	"Midnight": tom_data[0].Midnight,
-			      	"date-tomorrow": ' رمضان ' + tom,
+			      	"date-tomorrow": '' + tom,
 			      	"Fajr-tomorrow": tom_data[0].Fajr,
 			      	"Sunrise-tomorrow": tom_data[0].Sunrise,
 			      	"Dhuhr-tomorrow": tom_data[0].Dhuhr,
