@@ -2,13 +2,14 @@ var express = require('express');
 var router = express.Router();
 var City = require('../models/city');
 var _ = require('underscore');
+var Verify = require('./verify.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 // Create a new City
-router.post('/city', function(req, res, next) {
+router.post('/city', Verify.verifyUser ,function(req, res, next) {
 	City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
 	  	if (err) return res.status(500).json({ err: err });
 		res.json(city);
@@ -213,7 +214,7 @@ router.get('/city/all', function(req, res, next) {
 });
 
 // Update City By Name
-router.put('/city/:name', function(req, res, next) {
+router.put('/city/:name', Verify.verifyUser , function(req, res, next) {
 	City.findOneAndUpdate({ name: req.params.name }, { cal: req.body.cal }, function(err, city) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!city) { return res.status(404).json('Not Found'); }
@@ -222,7 +223,7 @@ router.put('/city/:name', function(req, res, next) {
 });
 
 // Delete City By Name
-router.delete('/city/:name', function(req, res, next) {
+router.delete('/city/:name', Verify.verifyUser , function(req, res, next) {
 	City.remove({ name: req.params.name }, function(err) {
 		if (err) { return res.status(500).json({ err: err }); }
 		res.status(404).json('Deleted Succesfully');
