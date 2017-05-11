@@ -3,6 +3,7 @@ var router = express.Router();
 var City = require('../models/city');
 var _ = require('underscore');
 var Verify = require('./verify.js');
+var prays = ['day', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Imsak', 'Midnight'];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,10 +11,23 @@ router.get('/', function(req, res, next) {
 });
 // Create a new City
 router.post('/city', Verify.verifyUser ,function(req, res, next) {
-	City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
-	  	if (err) return res.status(500).json({ err: err });
-		res.json(city);
-	});
+	var valid = true;
+	var cal = Object.getOwnPropertyNames(req.body.cal);
+
+	for (var i = 0; i < cal.length; i++) {
+		if (!/^\d+$/.test(cal[i]) || _.difference(Object.getOwnPropertyNames(req.body.cal[cal[i]]), prays).length !== 0) {
+    		valid = false;
+    	}
+	}
+
+	if (valid) {
+		City.create({ name: req.body.name, cal: req.body.cal }, function (err, city) {
+		  	if (err) return res.status(500).json({ err: err });
+			res.json(city);
+		});
+	} else {
+		res.json('Bad Insertion!');
+	}
 });
 // Get the Data for Flowics API
 router.post('/city/data', function(req, res, next) {
@@ -215,11 +229,24 @@ router.get('/city/all', function(req, res, next) {
 
 // Update City By Name
 router.put('/city/:name', Verify.verifyUser , function(req, res, next) {
-	City.findOneAndUpdate({ name: req.params.name }, { cal: req.body.cal }, function(err, city) {
-		if (err) { return res.status(500).json({ err: err }); }
-		if (!city) { return res.status(404).json('Not Found'); }
-		res.json(city);
-	});
+	var valid = true;
+	var cal = Object.getOwnPropertyNames(req.body.cal);
+
+	for (var i = 0; i < cal.length; i++) {
+		if (!/^\d+$/.test(cal[i]) || _.difference(Object.getOwnPropertyNames(req.body.cal[cal[i]]), prays).length !== 0) {
+    		valid = false;
+    	}
+	}
+	if (valid) {
+		City.findOneAndUpdate({ name: req.params.name }, { cal: req.body.cal }, function(err, city) {
+			if (err) { return res.status(500).json({ err: err }); }
+			if (!city) { return res.status(404).json('Not Found'); }
+			res.json(city);
+		});
+	} else {
+		res.json('Bad Insertion!');
+	}
+
 });
 
 // Delete City By Name
