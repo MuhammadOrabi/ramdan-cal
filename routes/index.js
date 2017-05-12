@@ -220,7 +220,7 @@ router.get('/schema/city', function(req, res, next) {
 });
 
 // Get All the data
-router.get('/city/all', function(req, res, next) {
+router.get('/city', function(req, res, next) {
 	City.find({}, function(err, all) {
 		if (err) { return res.status(500).json({ err: err }); }
 		if (!all) { return res.status(404).json('Not Found'); }
