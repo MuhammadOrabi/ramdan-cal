@@ -4,6 +4,7 @@ var City = require('../models/city');
 var _ = require('underscore');
 var Verify = require('./verify.js');
 var prays = ['day', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Imsak', 'Midnight'];
+var emptyCal = {'day': '', 'Fajr': '', 'Sunrise': '', 'Dhuhr': '', 'Asr': '', 'Sunset': '', 'Maghrib': '', 'Isha': '', 'Imsak': '', 'Midnight': ''};
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -65,9 +66,9 @@ router.post('/city/data', function(req, res, next) {
 
 			var d = new Date();
 			var n = d.getDate();
-			var tod_data = city.cal[n.toString()];
-			var tom = n === 31 ? 1 : n + 1;
-			var tom_data = city.cal[tom.toString()];
+			var tod_data = city.cal[n.toString()] || emptyCal;
+			var tom = n + 1;
+			var tom_data = city.cal[tom.toString()] || emptyCal;
 			var data = {
 				      	"city": city.name,
 				      	"date": tod_data.day,
@@ -78,8 +79,8 @@ router.post('/city/data', function(req, res, next) {
 				      	"Sunset": tod_data.Sunset,
 				      	"Maghrib": tod_data.Maghrib,
 				      	"Isha": tod_data.Isha,
-				      	"Imsak": tom_data.Imsak,
-				      	"Midnight": tom_data.Midnight,
+				      	"Imsak": tod_data.Imsak,
+				      	"Midnight": tod_data.Midnight,
 				      	"date-tomorrow": tom_data.day,
 				      	"Fajr-tomorrow": tom_data.Fajr,
 				      	"Sunrise-tomorrow": tom_data.Sunrise,
