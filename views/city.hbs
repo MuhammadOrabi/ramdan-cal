@@ -1,23 +1,21 @@
-<h1>{{title}}</h1>
-<h1>Today {{ data.date }}</h1>
-<ul>
-	<li>Fajr: {{ data.Fajr }}</li>
-	<li>Sunrise: {{ data.Sunrise }}</li>
-	<li>Dhuhr: {{ data.Dhuhr }}</li>
-	<li>Asr: {{ data.Asr }}</li>
-	<li>Sunset: {{ data.Sunset }}</li>
-	<li>Maghrib: {{ data.Maghrib }}</li>
-	<li>Isha: {{ data.Isha }}</li>
-	<li>Imsak: {{ data.Imsak }}</li>
-</ul>
-<h1>Tomorrow {{ data.date-tomorrow }}</h1>
-<ul>
-	<li>Fajr: {{ data.Fajr-tomorrow }}</li>
-	<li>Sunrise: {{ data.Sunrise-tomorrow }}</li>
-	<li>Dhuhr: {{ data.Dhuhr-tomorrow }}</li>
-	<li>Asr: {{ data.Asr-tomorrow }}</li>
-	<li>Sunset: {{ data.Sunset-tomorrow }}</li>
-	<li>Maghrib: {{ data.Maghrib-tomorrow }}</li>
-	<li>Isha: {{ data.Isha-tomorrow }}</li>
-	<li>Imsak: {{ data.Imsak-tomorrow }}</li>
-</ul>
+<div class="ar">
+	<h1>{{title}}</h1>
+	<h1>{{ data.date }}</h1>
+	<ul>
+		<li>الفجر: {{ data.Fajr }}</li>
+		<li>الشروق: {{ data.Sunrise }}</li>
+		<li>الظهر: {{ data.Dhuhr }}</li>
+		<li>العصر: {{ data.Asr }}</li>
+		<li>المغرب: {{ data.Maghrib }}</li>
+		<li>العشاء: {{ data.Isha }}</li>
+	</ul>
+	<h1>{{ data.date-tomorrow }}</h1>
+	<ul>
+		<li>الفجر: {{ data.Fajr-tomorrow }}</li>
+		<li>الشروق: {{ data.Sunrise-tomorrow }}</li>
+		<li>الظهر: {{ data.Dhuhr-tomorrow }}</li>
+		<li>العصر: {{ data.Asr-tomorrow }}</li>
+		<li>المغرب: {{ data.Maghrib-tomorrow }}</li>
+		<li>العشاء: {{ data.Isha-tomorrow }}</li>
+	</ul>
+</div>
