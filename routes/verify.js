@@ -9,4 +9,3 @@ exports.verifyUser = function(req, res, next) {
 		return next(err);
 	}
 };
-

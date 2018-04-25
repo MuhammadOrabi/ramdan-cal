@@ -5,22 +5,22 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var url;
-var env = process.env.NODE_ENV || 'development';
-if (env === 'development') {
-	url = 'mongodb://localhost:27017/Cal';
-} else {
-	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
-	// url = 'mongodb://cal_admin:cal_admin@ds151018.mlab.com:51018/cal'
-}
+// var url;
+// var env = process.env.NODE_ENV || 'development';
+// if (env === 'development') {
+// 	// url = 'mongodb://localhost:27017/Cal';
+// 	url = 'mongodb://cal_admin:cal_admin@ds151018.mlab.com:51018/cal'
+// } else {
+// 	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
+// }
 
-var mongoose = require('mongoose');
-mongoose.connect(url);
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function () {
-	console.log('Connected Correctly to Server');
-});
+// var mongoose = require('mongoose');
+// mongoose.connect(url, { useMongoClient: true});
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'connection error:'));
+// db.once('open', function () {
+// 	console.log('Connected Correctly to Server');
+// });
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -41,7 +41,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
+// app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
