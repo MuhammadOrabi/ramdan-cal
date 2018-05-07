@@ -3,6 +3,14 @@ var router = express.Router();
 var _ = require('underscore');
 var prayTimes = require('../PrayTimes.js');
 var moment = require('moment-hijri');
+var emptyCal = {
+	'day': '',
+	'Fajr': '',
+	'Sunrise': '',
+	'Dhuhr': '',
+	'Asr': '',
+	'Sunset': '', 'Maghrib': '', 'Isha': '', 'Imsak': '', 'Midnight': '' };
+
 
 var locations = {
 	'مكة المكرمة': [21.4, 39.7],
@@ -59,38 +67,41 @@ router.post('/city/data', function(req, res, next) {
 			}
 		}
 	}
+	if(name) {
+		prayTimes.setMethod('Makkah');
+		var todayDate = new Date();
+		var tomorrowDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
-	prayTimes.setMethod('Makkah');
-	var todayDate = new Date();
-	var tomorrowDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+		var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
+		var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
 
-	var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
-	var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
-
-	var data = {
-		"city": name,
-		"date": moment(todayDate).format('iD'),
-		"Fajr": today.fajr,
-		"Sunrise": today.sunrise,
-		"Dhuhr": today.dhuhr,
-		"Asr": today.asr,
-		"Sunset": today.sunset,
-		"Maghrib": today.maghrib,
-		"Isha": today.isha,
-		"Imsak": today.imsak,
-		"Midnight": today.midnight,
-		"date-tomorrow": moment(tomorrowDate).format('iD'),
-		"Fajr-tomorrow": tomorrow.fajr,
-		"Sunrise-tomorrow": tomorrow.sunrise,
-		"Dhuhr-tomorrow": tomorrow.dhuhr,
-		"Asr-tomorrow": tomorrow.asr,
-		"Sunset-tomorrow": tomorrow.sunset,
-		"Maghrib-tomorrow": tomorrow.maghrib,
-		"Isha-tomorrow": tomorrow.isha,
-		"Imsak-tomorrow": tomorrow.imsak,
-		"Midnight-tomorrow": tomorrow.midnight
-	};
-	res.json(data);
+		var data = {
+			"city": name,
+			"date": moment(todayDate).format('iD'),
+			"Fajr": today.fajr,
+			"Sunrise": today.sunrise,
+			"Dhuhr": today.dhuhr,
+			"Asr": today.asr,
+			"Sunset": today.sunset,
+			"Maghrib": today.maghrib,
+			"Isha": today.isha,
+			"Imsak": today.imsak,
+			"Midnight": today.midnight,
+			"date-tomorrow": moment(tomorrowDate).format('iD'),
+			"Fajr-tomorrow": tomorrow.fajr,
+			"Sunrise-tomorrow": tomorrow.sunrise,
+			"Dhuhr-tomorrow": tomorrow.dhuhr,
+			"Asr-tomorrow": tomorrow.asr,
+			"Sunset-tomorrow": tomorrow.sunset,
+			"Maghrib-tomorrow": tomorrow.maghrib,
+			"Isha-tomorrow": tomorrow.isha,
+			"Imsak-tomorrow": tomorrow.imsak,
+			"Midnight-tomorrow": tomorrow.midnight
+		};
+		res.json(data);
+	} else {
+		res.json('Not Found!');
+	}
 });
 // Get the output Schema for Flowics
 router.get('/schema/city', function(req, res, next) {
@@ -111,47 +122,47 @@ router.get('/schema/city', function(req, res, next) {
 		    },
 		    "Fajr": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Sunrise": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Dhuhr": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Asr": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Sunset": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Maghrib": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Isha": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Imsak": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Midnight": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "date-tomorrow": {
@@ -162,47 +173,47 @@ router.get('/schema/city', function(req, res, next) {
 		    },
 		    "Fajr-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 PM"
 		    },
 		    "Sunrise-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 AM"
 		    },
 		    "Dhuhr-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 AM"
 		    },
 		    "Asr-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 AM"
 		    },
 		    "Sunset-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 PM"
 		    },
 		    "Maghrib-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 PM"
 		    },
 		    "Isha-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
-		      "sample": "06:26"
+		      "maxLength":9,
+		      "sample": "06:26 PM"
 		    },
 		    "Imsak-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    },
 		    "Midnight-tomorrow": {
 		      "type": "string",
-		      "maxLength":6,
+		      "maxLength":9,
 		      "sample": "06:26"
 		    }
 		  },
