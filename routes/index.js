@@ -253,7 +253,6 @@ router.get('/schema/city', function(req, res, next) {
 
 // Get All the data
 router.get('/city/:calc/:name', function(req, res, next) {
-	res.json(numbers(٤٤, 'en'));
 	var names = Object.keys(locations);
 	var name;
 	var tmp = req.params.name;
@@ -281,7 +280,7 @@ router.get('/city/:calc/:name', function(req, res, next) {
 
 	var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
 	var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
-
+	res.json(moment().format('iYYYY/iM/iD'));
 	var data = {
 		"city": name,
 		"date": moment(todayDate).format('iD'),
