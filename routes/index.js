@@ -3,7 +3,7 @@ var router = express.Router();
 var _ = require('underscore');
 var prayTimes = require('../PrayTimes.js');
 var moment = require('moment-hijri');
-var numbers = require('number-picker');
+moment.locale('en');
 
 var emptyCal = {
 	'day': '',
