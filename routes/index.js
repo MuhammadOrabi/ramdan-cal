@@ -3,6 +3,8 @@ var router = express.Router();
 var _ = require('underscore');
 var prayTimes = require('../PrayTimes.js');
 var moment = require('moment-hijri');
+var numbers = require('number-picker');
+
 var emptyCal = {
 	'day': '',
 	'Fajr': '',
@@ -251,6 +253,7 @@ router.get('/schema/city', function(req, res, next) {
 
 // Get All the data
 router.get('/city/:calc/:name', function(req, res, next) {
+	res.json(numbers(٤٤, 'en'));
 	var names = Object.keys(locations);
 	var name;
 	var tmp = req.params.name;
