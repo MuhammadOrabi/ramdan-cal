@@ -280,7 +280,7 @@ router.get('/city/:calc/:name', function(req, res, next) {
 
 	var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
 	var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
-	res.json(moment().format('iYYYY/iM/iD').iMonth());
+	res.json(moment('1990 5 25', 'YYYY iM D').format('YYYY/MM/DD'));
 	var data = {
 		"city": name,
 		"date": moment(todayDate).format('iD'),
