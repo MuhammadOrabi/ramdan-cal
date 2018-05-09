@@ -100,7 +100,30 @@ router.post('/city/data', function(req, res, next) {
 		};
 		res.json(data);
 	} else {
-		res.json('Not Found!');
+		var data = {
+			"city": '',
+			"date": '',
+			"Fajr": '',
+			"Sunrise": '',
+			"Dhuhr": '',
+			"Asr": '',
+			"Sunset": '',
+			"Maghrib": '',
+			"Isha": '',
+			"Imsak": '',
+			"Midnight": '',
+			"date-tomorrow": '',
+			"Fajr-tomorrow": '',
+			"Sunrise-tomorrow": '',
+			"Dhuhr-tomorrow": '',
+			"Asr-tomorrow": '',
+			"Sunset-tomorrow": '',
+			"Maghrib-tomorrow": '',
+			"Isha-tomorrow": '',
+			"Imsak-tomorrow": '',
+			"Midnight-tomorrow": ''
+		};
+		res.json(data);
 	}
 });
 // Get the output Schema for Flowics
