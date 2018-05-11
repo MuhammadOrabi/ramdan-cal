@@ -148,47 +148,47 @@ router.get('/schema/city', function(req, res, next) {
 		    "Fajr": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Sunrise": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Dhuhr": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Asr": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Sunset": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Maghrib": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Isha": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Imsak": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Midnight": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "date-tomorrow": {
 		      "type":"string",
@@ -234,12 +234,12 @@ router.get('/schema/city', function(req, res, next) {
 		    "Imsak-tomorrow": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    },
 		    "Midnight-tomorrow": {
 		      "type": "string",
 		      "maxLength":9,
-		      "sample": "06:26"
+		      "sample": "06:26 AM"
 		    }
 		  },
 		  "required":[
