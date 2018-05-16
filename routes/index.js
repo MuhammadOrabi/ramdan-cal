@@ -74,8 +74,9 @@ router.post('/city/data', function (req, res, next) {
 	}
 	if (name) {
 		prayTimes.setMethod('Makkah');
-		var todayDate = new Date();
-		var tomorrowDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+		var todayDate = new Date(new Date().getTime() - (24 * 60 * 60 * 1000));
+		// var todayDate = new Date();
+		var tomorrowDate = new Date(todayDate.getTime() + 24 * 60 * 60 * 1000);
 
 		var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
 		var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
@@ -278,8 +279,9 @@ router.get('/city/:calc/:name', function (req, res, next) {
 	name = tmp;
 
 	prayTimes.setMethod(req.params.calc);
-	var todayDate = new Date();
-	var tomorrowDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+	var todayDate = new Date(new Date().getTime() - (24 * 60 * 60 * 1000));
+	// var todayDate = new Date();
+	var tomorrowDate = new Date(todayDate.getTime() + 24 * 60 * 60 * 1000);
 
 	var today = prayTimes.getTimes(todayDate, locations[name], 'auto', 1, '12h');
 	var tomorrow = prayTimes.getTimes(tomorrowDate, locations[name], 'auto', 1, '12h');
