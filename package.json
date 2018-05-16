@@ -12,6 +12,7 @@
     "express": "~4.14.1",
     "hbs": "~4.0.1",
     "moment-hijri": "^2.0.1",
+    "number-picker": "*",
     "mongoose": "^4.9.5",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2",

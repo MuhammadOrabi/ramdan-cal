@@ -3,7 +3,10 @@ var router = express.Router();
 var _ = require('underscore');
 var prayTimes = require('../PrayTimes.js');
 var moment = require('moment-hijri');
+moment.locale('en');
+
 process.env.TZ = 'EET';
+
 var emptyCal = {
 	'day': '',
 	'Fajr': '',
@@ -102,12 +105,36 @@ router.post('/city/data', function (req, res, next) {
 		};
 		res.json(data);
 	} else {
-		res.json('Not Found!');
+		var data = {
+			"city": '',
+			"date": '',
+			"Fajr": '',
+			"Sunrise": '',
+			"Dhuhr": '',
+			"Asr": '',
+			"Sunset": '',
+			"Maghrib": '',
+			"Isha": '',
+			"Imsak": '',
+			"Midnight": '',
+			"date-tomorrow": '',
+			"Fajr-tomorrow": '',
+			"Sunrise-tomorrow": '',
+			"Dhuhr-tomorrow": '',
+			"Asr-tomorrow": '',
+			"Sunset-tomorrow": '',
+			"Maghrib-tomorrow": '',
+			"Isha-tomorrow": '',
+			"Imsak-tomorrow": '',
+			"Midnight-tomorrow": ''
+		};
+		res.json(data);
 	}
 });
 // Get the output Schema for Flowics
 router.get('/schema/city', function (req, res, next) {
 	var schema = {
+<<<<<<< HEAD
 		"type": "object",
 		"properties": {
 			"city": {
@@ -225,6 +252,125 @@ router.get('/schema/city', function (req, res, next) {
 			"Maghrib-tomorrow", "Isha-tomorrow", "Imsak-tomorrow", "Midnight-tomorrow"
 		]
 	};
+=======
+		  "type":"object",
+		  "properties":{
+		    "city":{
+		      "type":"string",
+		      "description":"name of the city",
+		      "maxLength":15,
+		      "sample":"San Francisco"
+		    },
+		    "date":{
+		      "type":"string",
+		      "description":"Date",
+		      "maxLength":15,
+		      "sample":"17 Mar 2016"
+		    },
+		    "Fajr": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Sunrise": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Dhuhr": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Asr": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Sunset": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Maghrib": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Isha": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Imsak": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Midnight": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "date-tomorrow": {
+		      "type":"string",
+		      "description":"Date",
+		      "maxLength":15,
+		      "sample":"18 Mar 2016"
+		    },
+		    "Fajr-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 PM"
+		    },
+		    "Sunrise-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Dhuhr-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Asr-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Sunset-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 PM"
+		    },
+		    "Maghrib-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 PM"
+		    },
+		    "Isha-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 PM"
+		    },
+		    "Imsak-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    },
+		    "Midnight-tomorrow": {
+		      "type": "string",
+		      "maxLength":9,
+		      "sample": "06:26 AM"
+		    }
+		  },
+		  "required":[
+			  	"city","date","Fajr","Sunrise","Dhuhr","Asr","Sunset","Maghrib","Isha","Imsak","Midnight",
+			  	"date-tomorrow","Fajr-tomorrow","Sunrise-tomorrow","Dhuhr-tomorrow","Asr-tomorrow","Sunset-tomorrow",
+			  	"Maghrib-tomorrow","Isha-tomorrow","Imsak-tomorrow","Midnight-tomorrow"
+		  	]
+		};
+>>>>>>> 9d4facdd91be5f057062606abb9f24cd09e79513
 	res.json(schema);
 });
 
