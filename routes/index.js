@@ -8,12 +8,18 @@ const excelToJson = require('convert-excel-to-json');
 var prays = ['day', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Imsak', 'Midnight'];
 var emptyCal = { 'day': '', 'Fajr': '', 'Sunrise': '', 'Dhuhr': '', 'Asr': '', 'Sunset': '', 'Maghrib': '', 'Isha': '', 'Imsak': '', 'Midnight': '' };
 
-process.env.TZ = 'EET';
+// process.env.TZ = 'EET';
 
+Date.prototype.addHours = function (h) {
+	this.setHours(this.getHours() + h);
+	return this;
+}
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	return res.json(new Date().toGMTString());
+	var d = new Date().addHours(3);
+
+	return res.json(d);
 	// res.render('index', { title: 'Express' });
 });
 // Create a new City
@@ -70,7 +76,7 @@ router.post('/city/data', function (req, res, next) {
 			if (err) { return res.status(500).json({ err: err }); }
 			if (!city) { return res.status(422).json(); }
 
-			var d = new Date();
+			var d = new Date().addHours(3);
 			var n = d.getDate();
 			var tod_data = city.cal[n.toString()] || emptyCal;
 			var tom = n + 1;
