@@ -6,6 +6,7 @@ var moment = require('moment-hijri');
 moment.locale('en');
 
 process.env.TZ = 'EET';
+prayTimes.adjust({ asr: 'Standard' });
 
 var emptyCal = {
 	'day': '',
@@ -311,5 +312,6 @@ router.get('/city/:calc/:name', function (req, res, next) {
 	};
 	res.render('city', { title: name, 'data': data });
 });
+
 
 module.exports = router;
