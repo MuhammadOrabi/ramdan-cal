@@ -13,7 +13,7 @@ process.env.TZ = 'EET';
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	return res.json(new Date());
+	return res.json(new Date().toGMTString());
 	// res.render('index', { title: 'Express' });
 });
 // Create a new City
