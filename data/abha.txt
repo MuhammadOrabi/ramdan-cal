@@ -1,0 +1,41 @@
+{
+	"name": "أبها",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:15 AM",
+			"Sunrise": "5:36 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:20 PM",
+			"Maghrib": "6:37 PM",
+			"Isha": "8:37 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:14 AM",
+			"Sunrise": "5:36 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:21 PM",
+			"Maghrib": "6:38 PM",
+			"Isha": "8:38 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:14 AM",
+			"Sunrise": "5:36 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:21 PM",
+			"Maghrib": "6:38 PM",
+			"Isha": "8:38 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		}
+	}
+}

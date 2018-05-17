@@ -1,0 +1,41 @@
+{
+	"name": "حائل",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:53 AM",
+			"Sunrise": "5:23 AM",
+			"Dhuhr": "12:10 PM",
+			"Asr": "3:41 PM",
+			"Maghrib": "6:57 PM",
+			"Isha": "8:57 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:53 AM",
+			"Sunrise": "5:23 AM",
+			"Dhuhr": "12:10 PM",
+			"Asr": "3:41 PM",
+			"Maghrib": "6:57 PM",
+			"Isha": "8:57 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:51 AM",
+			"Sunrise": "5:23 AM",
+			"Dhuhr": "12:10 PM",
+			"Asr": "3:41 PM",
+			"Maghrib": "6:58 PM",
+			"Isha": "8:58 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

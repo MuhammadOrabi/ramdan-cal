@@ -1,0 +1,41 @@
+{
+	"name": "جازان",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:17 AM",
+			"Sunrise": "5:38 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:22 PM",
+			"Maghrib": "6:35 PM",
+			"Isha": "8:35 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:17 AM",
+			"Sunrise": "5:38 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:22 PM",
+			"Maghrib": "6:35 PM",
+			"Isha": "8:35 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:17 AM",
+			"Sunrise": "5:38 AM",
+			"Dhuhr": "12:07 PM",
+			"Asr": "3:23 PM",
+			"Maghrib": "6:36 PM",
+			"Isha": "8:36 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

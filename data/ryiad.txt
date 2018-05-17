@@ -1,0 +1,41 @@
+{
+	"name": "الرياض",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:41 AM",
+			"Sunrise": "5:08 AM",
+			"Dhuhr": "11:50 AM",
+			"Asr": "3:15 PM",
+			"Maghrib": "6:31 PM",
+			"Isha": "8:31 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:41 AM",
+			"Sunrise": "5:08 AM",
+			"Dhuhr": "11:50 AM",
+			"Asr": "3:15 PM",
+			"Maghrib": "6:32 PM",
+			"Isha": "8:32 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:40 AM",
+			"Sunrise": "5:08 AM",
+			"Dhuhr": "11:50 AM",
+			"Asr": "3:15 PM",
+			"Maghrib": "6:32 PM",
+			"Isha": "8:32 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		}
+	}
+}

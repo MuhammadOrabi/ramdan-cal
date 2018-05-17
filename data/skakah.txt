@@ -1,0 +1,41 @@
+{
+	"name": "سكاكا",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:51 AM",
+			"Sunrise": "5:24 AM",
+			"Dhuhr": "12:16 PM",
+			"Asr": "3:53 PM",
+			"Maghrib": "7:07 PM",
+			"Isha": "9:07 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:50 AM",
+			"Sunrise": "5:24 AM",
+			"Dhuhr": "12:16 PM",
+			"Asr": "3:53 PM",
+			"Maghrib": "7:08 PM",
+			"Isha": "9:08 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:49 AM",
+			"Sunrise": "5:24 AM",
+			"Dhuhr": "12:16 PM",
+			"Asr": "3:53 PM",
+			"Maghrib": "7:08 PM",
+			"Isha": "9:08 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

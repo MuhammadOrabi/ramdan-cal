@@ -5,22 +5,23 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// var url;
-// var env = process.env.NODE_ENV || 'development';
-// if (env === 'development') {
-// 	// url = 'mongodb://localhost:27017/Cal';
-// 	url = 'mongodb://cal_admin:cal_admin@ds151018.mlab.com:51018/cal'
-// } else {
-// 	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
-// }
+var url;
+var env = process.env.NODE_ENV || 'development';
+if (env === 'development') {
+	// url = 'mongodb://localhost:27017/Cal';
+	// url = 'mongodb://cal_admin:cal_admin@ds151018.mlab.com:51018/cal'
+	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
+} else {
+	url = 'mongodb://heroku_1qlzlsfq:dc89r9rch7krv0vs2omujvgd9q@ds111791.mlab.com:11791/heroku_1qlzlsfq';
+}
 
-// var mongoose = require('mongoose');
-// mongoose.connect(url, { useMongoClient: true});
-// var db = mongoose.connection;
-// db.on('error', console.error.bind(console, 'connection error:'));
-// db.once('open', function () {
-// 	console.log('Connected Correctly to Server');
-// });
+var mongoose = require('mongoose');
+mongoose.connect(url, { useMongoClient: true });
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+	console.log('Connected Correctly to Server');
+});
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -44,21 +45,21 @@ app.use('/', index);
 // app.use('/users', users);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+app.use(function (req, res, next) {
+	var err = new Error('Not Found');
+	err.status = 404;
+	next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+app.use(function (err, req, res, next) {
+	// set locals, only providing error in development
+	res.locals.message = err.message;
+	res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.json({message: err.message, error: err});
+	// render the error page
+	res.status(err.status || 500);
+	res.json({ message: err.message, error: err });
 });
 
 module.exports = app;

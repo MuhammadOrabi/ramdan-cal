@@ -1,0 +1,41 @@
+{
+	"name": "الدمام",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:23 AM",
+			"Sunrise": "4:51 AM",
+			"Dhuhr": "11:36 AM",
+			"Asr": "3:05 PM",
+			"Maghrib": "6:21 PM",
+			"Isha": "8:21 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:22 AM",
+			"Sunrise": "4:51 AM",
+			"Dhuhr": "11:37 AM",
+			"Asr": "3:05 PM",
+			"Maghrib": "6:21 PM",
+			"Isha": "8:21 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:21 AM",
+			"Sunrise": "4:51 AM",
+			"Dhuhr": "11:37 AM",
+			"Asr": "3:05 PM",
+			"Maghrib": "6:22 PM",
+			"Isha": "8:22 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

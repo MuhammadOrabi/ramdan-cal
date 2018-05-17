@@ -1,0 +1,41 @@
+{
+	"name": "بريدة",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:47 AM",
+			"Sunrise": "5:16 AM",
+			"Dhuhr": "12:01 PM",
+			"Asr": "3:30 PM",
+			"Maghrib": "6:45 PM",
+			"Isha": "8:45 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:47 AM",
+			"Sunrise": "5:16 AM",
+			"Dhuhr": "12:01 PM",
+			"Asr": "3:30 PM",
+			"Maghrib": "6:46 PM",
+			"Isha": "8:46 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:47 AM",
+			"Sunrise": "5:16 AM",
+			"Dhuhr": "12:01 PM",
+			"Asr": "3:30 PM",
+			"Maghrib": "6:46 PM",
+			"Isha": "8:46 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		}
+	}
+}

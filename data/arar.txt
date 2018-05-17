@@ -1,0 +1,41 @@
+{
+	"name": "عرعر",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "3:44 AM",
+			"Sunrise": "5:19 AM",
+			"Dhuhr": "12:13 PM",
+			"Asr": "3:52 PM",
+			"Maghrib": "7:06 PM",
+			"Isha": "9:06 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "3:43 AM",
+			"Sunrise": "5:19 AM",
+			"Dhuhr": "12:13 PM",
+			"Asr": "3:52 PM",
+			"Maghrib": "7:07 PM",
+			"Isha": "9:07 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "3:42 AM",
+			"Sunrise": "5:19 AM",
+			"Dhuhr": "12:13 PM",
+			"Asr": "3:52 PM",
+			"Maghrib": "7:07 PM",
+			"Isha": "9:07 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

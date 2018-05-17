@@ -1,0 +1,41 @@
+{
+	"name": "تبوك",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:11 AM",
+			"Sunrise": "5:42 AM",
+			"Dhuhr": "12:31 PM",
+			"Asr": "4:04 PM",
+			"Maghrib": "7:19 PM",
+			"Isha": "9:19 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:10 AM",
+			"Sunrise": "5:42 AM",
+			"Dhuhr": "12:31 PM",
+			"Asr": "4:04 PM",
+			"Maghrib": "7:19 PM",
+			"Isha": "9:19 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:9 AM",
+			"Sunrise": "5:42 AM",
+			"Dhuhr": "12:31 PM",
+			"Asr": "4:04 PM",
+			"Maghrib": "7:20 PM",
+			"Isha": "9:20 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

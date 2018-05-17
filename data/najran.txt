@@ -1,0 +1,41 @@
+{
+	"name": "نجران",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:09 AM",
+			"Sunrise": "5:30 AM",
+			"Dhuhr": "12:00 PM",
+			"Asr": "3:14 PM",
+			"Maghrib": "6:29 PM",
+			"Isha": "8:29 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:09 AM",
+			"Sunrise": "5:30 AM",
+			"Dhuhr": "12:00 PM",
+			"Asr": "3:15 PM",
+			"Maghrib": "6:30 PM",
+			"Isha": "8:30 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:09 AM",
+			"Sunrise": "5:30 AM",
+			"Dhuhr": "12:00 PM",
+			"Asr": "3:16 PM",
+			"Maghrib": "6:30 PM",
+			"Isha": "8:30 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

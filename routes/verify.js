@@ -1,4 +1,4 @@
-exports.verifyUser = function(req, res, next) {
+exports.verifyUser = function (req, res, next) {
 	var token = req.body.token || req.query.token || req.headers['x-access-token'];
 	var valid = process.env.PASS || 'Orabi';
 	if (token === valid) {

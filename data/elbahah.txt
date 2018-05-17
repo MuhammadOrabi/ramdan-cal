@@ -1,0 +1,41 @@
+{
+	"name": "الباحة",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:14 AM",
+			"Sunrise": "5:37 AM",
+			"Dhuhr": "12:11 PM",
+			"Asr": "3:24 PM",
+			"Maghrib": "6:44 PM",
+			"Isha": "8:44 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:14 AM",
+			"Sunrise": "5:37 AM",
+			"Dhuhr": "12:11 PM",
+			"Asr": "3:24 PM",
+			"Maghrib": "6:45 PM",
+			"Isha": "8:45 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:13 AM",
+			"Sunrise": "5:37 AM",
+			"Dhuhr": "12:11 PM",
+			"Asr": "3:24 PM",
+			"Maghrib": "6:45 PM",
+			"Isha": "8:45 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

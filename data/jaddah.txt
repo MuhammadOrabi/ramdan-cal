@@ -1,0 +1,41 @@
+{
+	"name": "جدة",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "4:21 AM",
+			"Sunrise": "5:44 AM",
+			"Dhuhr": "12:20 PM",
+			"Asr": "3:38 PM",
+			"Maghrib": "6:56 PM",
+			"Isha": "8:00 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:20 AM",
+			"Sunrise": "5:44 AM",
+			"Dhuhr": "12:20 PM",
+			"Asr": "3:37 PM",
+			"Maghrib": "6:56 PM",
+			"Isha": "8:56 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:19 AM",
+			"Sunrise": "5:43 AM",
+			"Dhuhr": "12:20 PM",
+			"Asr": "3:37 PM",
+			"Maghrib": "6:56 PM",
+			"Isha": "8:56 PM",
+			"Imsak": "",
+			"Sunset": "",
+			"Midnight": ""
+		}
+	}
+}

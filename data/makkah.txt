@@ -1,0 +1,41 @@
+{
+	"name": "مكة المكرمة",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "04:19 AM",
+			"Sunrise": "05:43 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "03:35 PM",
+			"Maghrib": "06:53 PM",
+			"Isha": "08:53 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:17 AM",
+			"Sunrise": "5:41 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "3:34 PM",
+			"Maghrib": "6:54 PM",
+			"Isha": "8:54 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:16 AM",
+			"Sunrise": "5:41 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "3:34 PM",
+			"Maghrib": "6:54 PM",
+			"Isha": "8:54 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"name": "المدينة المنورة",
+	"cal": {
+		"17": {
+			"day": "1",
+			"Fajr": "04:10 AM",
+			"Sunrise": "05:37 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "03:43 PM",
+			"Maghrib": "06:59 PM",
+			"Isha": "08:59 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"18": {
+			"day": "2",
+			"Fajr": "4:09 AM",
+			"Sunrise": "5:37 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "3:43 PM",
+			"Maghrib": "7:00 PM",
+			"Isha": "9:00 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		},
+		"19": {
+			"day": "3",
+			"Fajr": "4:09 AM",
+			"Sunrise": "5:37 AM",
+			"Dhuhr": "12:18 PM",
+			"Asr": "3:43 PM",
+			"Maghrib": "7:00 PM",
+			"Isha": "9:00 PM",
+			"Sunset": "",
+			"Imsak": "",
+			"Midnight": ""
+		}
+	}
+}
