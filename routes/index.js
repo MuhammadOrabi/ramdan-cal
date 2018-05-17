@@ -8,6 +8,8 @@ const excelToJson = require('convert-excel-to-json');
 var prays = ['day', 'Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Sunset', 'Maghrib', 'Isha', 'Imsak', 'Midnight'];
 var emptyCal = { 'day': '', 'Fajr': '', 'Sunrise': '', 'Dhuhr': '', 'Asr': '', 'Sunset': '', 'Maghrib': '', 'Isha': '', 'Imsak': '', 'Midnight': '' };
 
+process.env.TZ = 'EET';
+
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
