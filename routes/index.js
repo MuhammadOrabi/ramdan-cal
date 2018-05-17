@@ -17,10 +17,7 @@ Date.prototype.addHours = function (h) {
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	var d = new Date().addHours(3);
-
-	return res.json(d);
-	// res.render('index', { title: 'Express' });
+	res.render('index', { title: 'Express' });
 });
 // Create a new City
 router.post('/city', Verify.verifyUser, function (req, res, next) {
